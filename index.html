@@ -5,57 +5,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="">
+    
 </head>
 
 <body>
     <div id="container">
         <header class="header">
-            <h1 id="title">FreeCodeCamp Survey Form</h1>
-            <p id="description">Thank you for taking the time to help us improve the platform</p>
+            <h1 id="title">Exprés Survey Form</h1>
+            <p id="description">Gracias por ayudarnos a mejorar</p>
+        </div>       
         </header>
         <form id="survey-form">
             <div class="form-1">
-                <label id="name-label" for="name">Name</label>
+                <label id="name-label" for="name">Nombre</label>
                 <input type="text" name="name" id="name" placeholder="Please your name" required />
             </div>
             <div class="form-1">
                 <label id="email-label" for="email">E-mail</label>
                 <input type="text" name="email" id="email" placeholder="Please your email" required />
             </div>
-            <div class="form-1">
-                <label id="number-label" for="number">Age</label>
+            <div class="form-2">
+                <label id="number-label" for="number">Edad</label>
                 <input type="number" name="age" id="number" min="18" max="99" placeholder="How old are you?" />
             </div>
             <div class="form-1">
-                <p>Which option best describes your current role?</p>
+                <p>¿Cual es tu ocupacion?</p>
                 <select id="dropdown" name="role" class="form-control" required>
-                    <option disabled selected value>Select your role</option>
-                    <option value="student">Student</option>
-                    <option value="job">Full Time Job</option>
-                    <option value="learner">Full Time Learner</option>
-                    <option value="preferNo">Prefer not to say</option>
-                    <option value="other">Other</option>
+                    <option disabled selected value>Selecciona tu ocupacion</option>
+                    <option value="independiente">Independiente</option>
+                    <option value="student">Estudiante</option>
+                    <option value="job">Empleado</option>
+                    <option value="preferNo">Me Reservo</option>
+                    <option value="other">Otro</option>
                 </select>
             </div>
-            <div class="form-1">
-                <p>Would you recommend freeCodeCamp to a friend?</p>
+            <div class="form-3">
+                <p>¿Recomendarias nuestra empresa a un amigo?</p>
                 <label>
-                    <input name="user" value="sure" type="radio" class="input-radio" checked />Sure</label>
+                    <input name="user" value="sure" type="radio" class="input-radio" checked />Claro</label>
                 <label>
-                    <input name="user" value="maybe" type="radio" class="input-radio" />Maybe</label>
+                    <input name="user" value="maybe" type="radio" class="input-radio" />Tal vez</label>
 
-                <label><input name="user" value="not-sure" type="radio" class="input-radio" />Not sure</label>
+                <label><input name="user" value="not-sure" type="radio" class="input-radio" />No estoy segur@</label>
             </div>
+            <div class="form-4">
+                <p>¿Que te gustaria que cambiaramos? <span class="clue">(Marque todo lo que corresponda)</span></p>
+            <label>
+                <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox"> Promociones y descuentos
+            </label>    
+            <label>
+                <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox"> Cambio de personal
+            </label>    
+            <label>
+                <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox"> Garantia del servicio
+            </label>    
+            <label>
+                <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox"> acompañamiento
+            </label>
+            <label>
+                <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox"> Asesorias
+            </label>    
+    </div>
             <div>
-                <p>Any commenst or suggestions?</p>
+                <p>¿Tienes algun comentario o sugerencia?</p>
             </div>
             <textarea class="input-textarea" name="comment" placeholder="Have any additional comments">
             </textarea>
             <div>
                 <button type="submit" class="submit-button">
-                    Click me
+                    Enviar
                 </button>
             </div>
         </form>
